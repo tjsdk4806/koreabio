@@ -1,0 +1,83 @@
+@import "vars";
+
+body {
+  font-family: "Pretendard", sans-serif;
+}
+
+.header {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  z-index: 10;
+
+  .logo {
+    position: absolute;
+    left: 150px;
+    a {
+      display: flex;
+      align-items: center;
+      height: $header-height;
+    }
+    img {
+      display: block;
+    }
+  }
+  // 가운데 메뉴
+  .gnb {
+    .list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 500;
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          padding: 0 65px;
+          height: $header-height;
+        }
+      }
+    }
+  }
+  // 오른쪽 로그인, 회원가입, 햄버거 메뉴
+  .all-menu {
+    position: absolute;
+    right: 120px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    height: $header-height;
+    .list {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      li {
+        a {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      .material-symbols-outlined {
+        font-size: 40px;
+        font-weight: 300;
+      }
+    }
+  }
+}
