@@ -81,3 +81,244 @@ body {
     }
   }
 }
+.main-visual {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  .swiper-pagination {
+    position: absolute;
+    left: 180px;
+    bottom: 300px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+  }
+  .info {
+    position: absolute;
+    align-items: center;
+    margin-top: 320px;
+    margin-left: 180px;
+    color: #fff;
+    .txt-up {
+      display: flex;
+      margin: 10px 0;
+      font-size: 115px;
+      h2 {
+        font-weight: 600;
+      }
+      h3 {
+        margin-left: 20px;
+        font-weight: 200;
+      }
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #fff;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+    transform: scale(1.2);
+  }
+}
+.section01 {
+  height: 1400px;
+  position: relative;
+  min-height: 1200px;
+  overflow: visible;
+  padding: 180px 0 100px;
+  z-index: 3;
+  background-image: url(../images/main/sec2_bg.png);
+  background-color: #fff;
+  background-size: 130%;
+  background-position: -600px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  .container {
+    padding-left: 150px;
+    position: relative;
+    z-index: 2;
+
+    h2 {
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 1.5;
+
+      p {
+        font-weight: 600;
+
+        padding-top: 20px;
+        padding-bottom: 200px;
+      }
+
+      .middle {
+        margin: 50px 0;
+      }
+
+      .span {
+        font-weight: 500;
+        color: #fff;
+        background: #000;
+        padding: 5px 10px;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .img-box2 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    img {
+      position: absolute;
+      display: block;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    .img01 {
+      margin-left: 150px;
+      top: 780px;
+    }
+
+    .img02 {
+      right: 150px;
+      top: 600px;
+    }
+  }
+}
+
+.notice {
+  width: 100%;
+  background-image: url(../images/main/sec3_bg.jpg);
+  padding: 80px 60px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  .notice-inner {
+    display: flex;
+    gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .notice-column {
+    flex: 1;
+    min-width: 0;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+  }
+
+  .notice-box {
+    width: 100%;
+    background: #fff;
+    border-radius: 30px;
+    padding: 40px 60px;
+    box-sizing: border-box;
+  }
+
+  .notice-list {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 30px 10px;
+      border-bottom: 1px solid #ccc;
+
+      &:first-child {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  .date {
+    width: 112px;
+    flex-shrink: 0;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 25px;
+    box-sizing: border-box;
+    strong {
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    span {
+      font-size: 16px;
+      margin-top: 8px;
+    }
+  }
+  .notice-info {
+    flex: 1;
+    .category {
+      display: inline-block;
+      background: #6195ed;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      word-break: keep-all;
+    }
+  }
+  .view-more {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 40px auto 0;
+    font-size: 14px;
+    transition: 0.3s;
+    &:hover {
+      background: #222;
+      color: #fff;
+    }
+    span {
+      font-size: 22px;
+    }
+  }
+  .company-box {
+    .notice-list {
+      li {
+        min-height: 160px;
+      }
+    }
+    .notice-info {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
